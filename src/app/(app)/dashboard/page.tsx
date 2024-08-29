@@ -91,7 +91,7 @@ const Page = () => {
         setIsSwitchLoading(false);
       }
     },
-    [setIsLoading, setMessages]
+    [setIsLoading, setMessages, toast]
   );
   useEffect(() => {
     const fetchData = async () => {
