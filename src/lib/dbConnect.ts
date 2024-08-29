@@ -18,7 +18,7 @@ async function dbConnect(): Promise<void> {
       {}
     );
     connection.isConnected = mongoose.connections[0].readyState;
-    console.log("New connection created");
+    console.log("New connection");
   } catch (error) {
     console.log("Error in dbConnect", error);
     process.exit(1);
